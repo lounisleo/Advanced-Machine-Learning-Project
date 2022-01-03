@@ -6,47 +6,60 @@ Ce dépôt contient les éléments de base de notre projet de l'implimentation d
 
 # :wave: Contenue 
 
-## 📝 Lancement 
+## 📝 Database 
 
-*Pour assurer le bon fonctionnement du programme il faut que tout les Fonction.py soit dans le fichier ..\\genre. 
+*Consernant la base de données on a utiliser des images aligned Basic 
+
 
 ## 🤓 Fonctions implimenté 
 
 L'objectif de cette partie est de vous donner une brève explication sur les fonctions implantées et selon quel ordre deverait être appelé. 🚀
 
-##  split_data.py 
+##  create_data.py 
 
-Pour déviser les données en train test et validation avec homogénéité des données.
+Pour déviser les images en train test et les labels endogene et exogenes en train et test.
 
-##  Create_Csv.py
+## data_endo.py 
 
-Cette fonction permet de créer un fichier csv à partir des données spliter.
+Permet de de faire un one hot encoding des labele des variables endogene "FER".
 
-##  MFCC.py
+## Get_data.py
 
-Cette fonction permet de calculer les descripteurs de type MFCC depuis la base de donnée.
+Permet de recupere nos donner "les images du visage "et leurs label "exogene/ endogene "
 
-##  architecture_model.py
+##  shape_data_exo.py
 
-Cette fonction permet de creer un modèle définit avec keras. 
+Permet de de faire un one hot encoding des labele des variables exogene "Le genre", "La race", " L'age" .
 
-##  train_model.py
+##  visualise.py
 
-Cette fonction permet d'entrainer les modèles et de tracer l'évolution de la loss et l'accuracy en fonction du nombre d'epochs. 
+Cette fonction permet de tracer l'évolution de la loss et l'accuracy en fonction du nombre d'epochs.
 
-##  predict.py
+##  train_model_exogenous.py
 
-Cette fonction d'evaluer le modèle entrainer en faisant la prediction sur la base de test.
+Cette fonction permet d'entrainer les modeles exagenous representation définit avec keras pour "Le genre", "La race", " L'age". 
 
-## visualise_data.py
+## Prediction_GRA 
 
-Permets de visualiser la répartition des données de la base. 
+Cette fonction permet predire le variables exogenes  "Le genre", "La race", " L'age" .
 
-## 💻 Notebook 
+## Deep_ensemble 
+
+Contient le classifieur deep ensemble 
+
+## endo_exo_representation.py
+
+Défint les 2 modeles exogene et endogene representation à l'aide de keras
+
+## Exagenous_classifier.py
+
+Définit l'autoencodeur Exagenous classifier
+
+## Tree_gate.py 
+
+Définit le bloc Deep Tree Gate 
+
+##  
+## 💻 Notebook  : THIN_code
 
 Un notebook est présent pour faire la démonstration des différentes fonctions. 
-
-
-
-
-
